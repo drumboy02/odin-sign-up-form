@@ -9,16 +9,18 @@
 
 :root {
     font-size: 16px;
+    color: #000;
     box-sizing: content-box;
 }
 
 body {
     margin: 0;
     padding: 0;
+    display: flex;
 }
 
 .left-side {
-    width: 35%;
+    width: 32%;
     position: relative;
     display: flex;
 }
@@ -41,6 +43,7 @@ body {
     align-items: center;
     position: absolute;
     top: 15%;
+    overflow: hidden;
 }
 
 .logo-container .logo {
@@ -62,5 +65,25 @@ body {
 }
 
 .right-side {
-    width: 65%;
+    width: 68%;
+}
+
+.hero-container {
+
+}
+
+.text-container {
+
+}
+
+.form-container {
+
+}
+
+.form-inputs {
+
+}
+
+.form-button {
+    
 }
