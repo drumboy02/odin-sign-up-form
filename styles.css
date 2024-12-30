@@ -8,6 +8,7 @@
 }
 
 :root {
+    font-family: system-ui;
     font-size: 16px;
     color: #000;
     box-sizing: content-box;
@@ -23,6 +24,10 @@ body {
     width: 32%;
     position: relative;
     display: flex;
+}
+
+.right-side {
+    width: 68%;
 }
 
 .bg-image {
@@ -58,14 +63,13 @@ body {
     width: 100%;
     text-align: center;
     color: #fff;
+
+    & a {
+        color: #fff;
+    }
 }
 
 .img-attribution a {
-    color: #fff;
-}
-
-.right-side {
-    width: 68%;
 }
 
 .hero-container {
@@ -77,7 +81,14 @@ body {
 }
 
 .form-container {
+    
+    & h1 {
+        font-weight: 500;
+    }
 
+    & label {
+        text-transform: uppercase;
+    }
 }
 
 .form-inputs {
@@ -85,5 +96,5 @@ body {
 }
 
 .form-button {
-    
+
 }
