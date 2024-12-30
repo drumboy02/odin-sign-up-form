@@ -115,6 +115,11 @@ body {
     }
 }
 
+.input-row {
+    margin-left: 2rem;
+    display: flex;
+}
+
 .form-button {
     margin: 1.5rem;
     margin-left: 2rem;
@@ -126,7 +131,9 @@ body {
         color: #fff;
         border: 0;
         border-radius: 0.2rem;
+        box-shadow: 1px 1px #ccc;
         width: 10rem;
         height: 2.2rem;
+        margin-bottom: 2rem;
     }
 }
