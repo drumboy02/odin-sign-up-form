@@ -125,6 +125,7 @@ body {
 
         &:invalid {
             border: 1px solid #f00;
+            box-shadow: 1px 1px 3px #ccc;
         }
     }
 }
