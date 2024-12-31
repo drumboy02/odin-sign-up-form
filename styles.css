@@ -12,6 +12,7 @@
     font-size: 16px;
     color: #000;
     box-sizing: content-box;
+    --ls-space: 3rem;
 }
 
 body {
@@ -22,6 +23,7 @@ body {
 
 .left-side {
     width: 32%;
+    height: 100vh;
     position: relative;
     display: flex;
 }
@@ -52,12 +54,12 @@ body {
     position: absolute;
     top: 15%;
     overflow: hidden;
-}
 
-.logo-container .logo {
-    height: 140px;
-    width: 100px;
-    padding: 0.8rem 0;
+    .logo {
+        height: 140px;
+        width: 100px;
+        padding: 0.8rem 0;
+    }
 }
 
 .img-attribution {
@@ -74,13 +76,14 @@ body {
 
 .text-container {
     font-size: 1.6rem;
-    font-weight: 700;
-    margin: 2rem;
+    font-weight: 600;
+    margin: 1.2rem;
+    margin-left: var(--ls-space);
     width: 80%;
 }
 
 .form-container {
-
+    width: 68vw;
 }
 
 .form-inputs {
@@ -90,19 +93,23 @@ body {
         font-size: 1.8rem;
         font-weight: 500;
         letter-spacing: -0.03rem;
-        padding: 1rem;
-        padding-left: 2rem;
+        margin: 0;
+        margin-left: var(--ls-space);
+        padding-top: 1rem;
     }
 
     label {
         text-transform: uppercase;
+        display: block;
     }
 
     input {
         border: 1px solid #E5E7EB;
         border-radius: 0.2rem;
-        margin: 1rem;
         outline: none;
+        padding: 0.4rem;
+        width: 16rem;
+        height: 1rem;
 
         &:focus {
             border: 1px solid #00f;
@@ -116,24 +123,35 @@ body {
 }
 
 .input-row {
-    margin-left: 2rem;
+    margin-left: var(--ls-space);
+    padding: 1rem 0;
     display: flex;
+    gap: 5rem;
+
+    .input-container {
+
+    }
 }
 
 .form-button {
-    margin: 1.5rem;
-    margin-left: 2rem;
-    display: flex;
-    flex-direction: column;
+    margin: 1.8rem;
+    margin-left: var(--ls-space);
 
     #btn-create {
         background: #596D48;
         color: #fff;
         border: 0;
         border-radius: 0.2rem;
-        box-shadow: 1px 1px #ccc;
-        width: 10rem;
-        height: 2.2rem;
-        margin-bottom: 2rem;
+        box-shadow: 2px 3px #eee;
+        width: 13rem;
+        height: 2.6rem;
+        margin-bottom: 0.5rem;
+        font-weight: 800;
+    }
+
+    a {
+        color: #596D48;
+        text-decoration: none;
+        font-weight: 700;
     }
 }
