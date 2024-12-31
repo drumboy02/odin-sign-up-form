@@ -30,6 +30,7 @@ body {
 
 .right-side {
     width: 68%;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -100,6 +101,9 @@ body {
 
     label {
         text-transform: uppercase;
+        letter-spacing: 0.09rem;
+        font-size: 0.9rem;
+        font-weight: 600;
         display: block;
     }
 
@@ -107,13 +111,16 @@ body {
         border: 1px solid #E5E7EB;
         border-radius: 0.2rem;
         outline: none;
-        padding: 0.4rem;
-        width: 16rem;
+        padding: 0.45rem;
+        padding-left: 0.6rem;
+        width: 16.8rem;
         height: 1rem;
+        font-size: 1rem;
+        margin-top: 2px;
 
         &:focus {
             border: 1px solid #00f;
-            box-shadow: 1px 1px #ccc;
+            box-shadow: 1px 2px 3px #ccc;
         }
 
         &:invalid {
@@ -128,8 +135,12 @@ body {
     display: flex;
     gap: 5rem;
 
-    .input-container {
+    &:nth-child(2) {
+        padding-top: 1.6rem;
+    }
 
+    &:nth-child(4) {
+        padding-bottom: 2.8rem;
     }
 }
 
@@ -142,7 +153,7 @@ body {
         color: #fff;
         border: 0;
         border-radius: 0.2rem;
-        box-shadow: 2px 3px #eee;
+        box-shadow: 2px 3px 3px #eee;
         width: 13rem;
         height: 2.6rem;
         margin-bottom: 0.5rem;
